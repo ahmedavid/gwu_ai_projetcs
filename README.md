@@ -1,5 +1,6 @@
 # Run AI Project 1
-cd into build and run index.html
+cd into build and run index.html. It is a prebuilt web app
+If you want to compile source code, refer down below how to run a react app 
 
 # Getting Started with Create React App
 
