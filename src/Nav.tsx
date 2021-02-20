@@ -9,13 +9,7 @@ const Nav = () => {
                 <Link to='/'>Home</Link>
             </li>
             <li>
-                <Link to='/mazetest'>Maze Test</Link>
-            </li>
-            <li>
-                <Link to='/mazeproject1'>AI Project1</Link>
-            </li>
-            <li>
-                <Link to='/mazegenerator'>Maze Generator</Link>
+                <Link to='/netsim'>NetSim</Link>
             </li>
         </ul>
     </nav>
