@@ -2,10 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './Nav';
-
-import { SearchPage } from './sandbox/ai_prj1/SearchPage';
-import NetSim from './sandbox/ns_sim/models/NetSim';
-
+import { MapColoring } from './sandbox/ai_projects/ai_prj2/MapColoring';
 
 function App() {
   return (
@@ -16,7 +13,7 @@ function App() {
 
         <Switch>
           <Route path="/">
-            <NetSim/>
+            <MapColoring/>
           </Route>
         </Switch>
       </div>

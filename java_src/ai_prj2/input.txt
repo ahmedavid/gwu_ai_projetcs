@@ -1,0 +1,9 @@
+# Coloring Problem, generated at: Sun Feb 21 19:34:26 EST 2021
+# Colors
+colors = 4
+# Graph: 
+1,2
+1,2
+1,3
+2,3
+2,3
