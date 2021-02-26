@@ -1,4 +1,4 @@
-##Compile
+## Compile
 javac .\java_src\ai_prj2\Main.java
 
 ## Run
