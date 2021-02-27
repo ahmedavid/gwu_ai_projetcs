@@ -3,8 +3,10 @@ Please look inside java_src/ai_prj2 folder
 
 
 # Run AI Project 1
-## Update 
+## Update (Java Version)
 I added Java version of project 1 in java_src folder
+
+## Javascript version
 cd into build and run index.html. It is a prebuilt web app
 If you want to compile source code, refer down below how to run a react app 
 
