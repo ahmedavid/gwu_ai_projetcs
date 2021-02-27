@@ -9,10 +9,18 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) throws FileNotFoundException{
         String filename = "p1_graph.txt";
-        if(args.length > 0) {
+        String algorithm = "astar";
+        if(args.length > 1) {
             filename = args[0];
+            if(!(args[1].equals("dijkstra") || args[1].equals("astar"))) {
+                System.out.println("Specify a search algorithm (astar, dijkstra)");
+                System.exit(1);
+            }
+            algorithm = args[1];
+
         } else {
-            System.out.println("Input file not provided, trying to open p1_graph.txt");
+            System.out.println("Missing arguments. example : java java_src.ai_prj1.Main p1_graph.txt astar");
+            System.exit(1);
         }
         URL path = Main.class.getResource(filename);
         File f = new File(path.getFile());
@@ -36,7 +44,7 @@ class Main {
             graph.addVertices(vertices);
             graph.addEdges(edges);
 
-            graph.shortestPath(0, 99, "astar");
+            graph.shortestPath(0, 99, algorithm);
 
 
             System.out.println("DONE");
