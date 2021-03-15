@@ -24,7 +24,7 @@ public class Graph {
         return result;
     }
 
-    // Manhattan Distance
+    // Eucledean Distance
     private double heur(int a, int b) {
         double[] aPos = getSqurePos(a, vertexMap.get(a));
         double[] bPos = getSqurePos(b, vertexMap.get(b));
@@ -32,7 +32,7 @@ public class Graph {
         double side1 = Math.abs(aPos[0] - bPos[0]);
         double side2 = Math.abs(aPos[1] - bPos[1]);
 
-        return side1 + side2;
+        return Math.sqrt(side1*side1 + side2*side2);
     }
 
     public void addEdge(int from, int to, int distance) {

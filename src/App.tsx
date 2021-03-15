@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './Nav';
-import { MapColoring } from './sandbox/ai_projects/ai_prj2/MapColoring';
+import { TicTacToe } from './sandbox/ai_projects/ai_prj3/TicTacToe';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
 
         <Switch>
           <Route path="/">
-            <MapColoring/>
+            <TicTacToe/>
           </Route>
         </Switch>
       </div>
